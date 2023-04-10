@@ -144,12 +144,12 @@
       </script>
      
      <canvas id="CanvasBlue" width=600 height=500 style="border:1px solid #d3d3d3;"></canvas>
-     <script> 
-        var canvas2 = document.getElementById('CanvasBlue');
-        var context2 = canvas2.getContext("2d");
-        context2.font = '20pt Calibri';
-        context2.fillStyle = "black";
-        context2.fillText("Modified Image will go here", 10, 20);
+     <script> //place text and image on canvas 2
+        var canvas2 = document.getElementById('CanvasBlue'); //attaches the id to canvas 2
+        var context2 = canvas2.getContext("2d"); //links the previous line to make a 2d canvas
+        context2.font = '20pt Calibri'; //creates the size and font style of the text on the 2nd canvas
+        context2.fillStyle = "black"; //color of the text on the canvas 2
+        context2.fillText("Modified Image will go here", 10, 20); //text displayed on canvas 2 before the image is modified and goes in
       </script>
 
     </div><!-- /content -->
