@@ -102,12 +102,16 @@
 
           /* PUT ANY CHANGES TO THE JAVASCRIPT HERE  */
           
-         function drawImage(imageObj, 0, 0, 600, 500);
+         function drawImage(imageObj) {
              var canvas2 = document.getElementByID('CanvasBlue');
              var context2 = canvas2.getcontext ('2d');
              var x = 0;
              var y = 0;
-          
+         
+         context2.drawImage(imageObj, 0, 0, 600, 500); //draws the image a certain size in canvas 2 
+             var imageData = context2.getImageData(x, y, imageObj.width, imageObj.height); //adjust image size and width?
+             var data = imageData.data;
+
           
           
         } // end of img.onload
